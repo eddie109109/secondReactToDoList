@@ -1,8 +1,9 @@
 import React from 'react';
 
 function Footer() {
+  var year = new Date().getFullYear();
   return (
-    <h1></h1>
+    <footer>&copy; Copyright {year} eddieprogramming</footer>
   );
 }
 

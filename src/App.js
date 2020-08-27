@@ -23,22 +23,25 @@ function App() {
   }
 
   return (
-    <div className="mainWrapper">
-    <Heading />
-    <CreateNote passNote={addNote} />
-    <div className="container">
-    {
-      notes.map((note,index) =>{
-      return ( <Note
-        key= {index}
-        id= {index}
-        title = {note.title}
-        content = {note.text}
-        passNote = {deleteNote}
-        />)
-      })
-    }
-    </div>
+    <div>
+      <div className="mainWrapper">
+      <Heading />
+      <CreateNote passNote={addNote} />
+      <div className="container">
+      {
+        notes.map((note,index) =>{
+        return ( <Note
+          key= {index}
+          id= {index}
+          title = {note.title}
+          content = {note.text}
+          passNote = {deleteNote}
+          />)
+        })
+      }
+      </div>
+
+      </div>
     <Footer />
     </div>
   );
