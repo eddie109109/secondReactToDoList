@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/secondReactToDoList/static/js/main.42e7d3af.chunk.js",
-    "main.js.map": "/secondReactToDoList/static/js/main.42e7d3af.chunk.js.map",
+    "main.js": "/secondReactToDoList/static/js/main.4b099894.chunk.js",
+    "main.js.map": "/secondReactToDoList/static/js/main.4b099894.chunk.js.map",
     "runtime-main.js": "/secondReactToDoList/static/js/runtime-main.b45ba269.js",
     "runtime-main.js.map": "/secondReactToDoList/static/js/runtime-main.b45ba269.js.map",
     "static/js/2.a3870095.chunk.js": "/secondReactToDoList/static/js/2.a3870095.chunk.js",
     "static/js/2.a3870095.chunk.js.map": "/secondReactToDoList/static/js/2.a3870095.chunk.js.map",
     "index.html": "/secondReactToDoList/index.html",
-    "precache-manifest.57469433805ea95768070be0c18f6332.js": "/secondReactToDoList/precache-manifest.57469433805ea95768070be0c18f6332.js",
+    "precache-manifest.18ba890429e652b2e88164769864a39c.js": "/secondReactToDoList/precache-manifest.18ba890429e652b2e88164769864a39c.js",
     "service-worker.js": "/secondReactToDoList/service-worker.js",
     "static/js/2.a3870095.chunk.js.LICENSE.txt": "/secondReactToDoList/static/js/2.a3870095.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b45ba269.js",
     "static/js/2.a3870095.chunk.js",
-    "static/js/main.42e7d3af.chunk.js"
+    "static/js/main.4b099894.chunk.js"
   ]
 }
