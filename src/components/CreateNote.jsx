@@ -8,7 +8,11 @@ function CreateNote(props) {
       text: ""
   });
 
-  function handClick(e) {
+  function handleClick(e) {
+
+    if (note.title ==="" && note.text === "") {
+      return;
+    }
     props.passNote(note); // when the user clicks the add button, i pass the note obj back to App.js using the getNote function being passed here
     e.preventDefault();
     // set the title and text fields back to empty
@@ -49,10 +53,10 @@ function CreateNote(props) {
 
   return (
     <div>
-    <form className="form" autoComplete="off">
-      <input onChange={handleChange} name="title" type="text" placeholder="Enter A Title" value={note.title}></input>
-      <textarea  onChange={handleChange} name="text" rows="3" cols="50" placeholder="Enter Text" value= {note.text}></textarea>
-      <button onClick={handClick}><AddIcon type="submit"></AddIcon></button>
+    <form className="form" autoComplete="off" >
+      <input onChange={handleChange} name="title" type="text" placeholder="Enter A Title" value={note.title} ></input>
+      <textarea  onChange={handleChange} name="text" rows="3" cols="50" placeholder="Enter Text" value= {note.text} ></textarea>
+      <button onClick={handleClick}><AddIcon type="submit"></AddIcon></button>
     </form>
     </div>
   );
