@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Heading from "./components/Heading";
 import CreateNote from "./components/CreateNote";
 import Footer from "./components/Footer";
@@ -7,6 +7,19 @@ import RemoveSharpIcon from '@material-ui/icons/RemoveSharp';
 
 function App() {
   const [notes, setNotes] = useState([]); // set an empty array of notes to store all the notes being passed here
+
+
+  useEffect(()=>{
+    if (localStorage.getItem("noteData")) {
+      setNotes(JSON.parse(localStorage.getItem("noteData")));
+    }
+  },[]);
+
+  useEffect(() => { // use the browser's cache to store data for data persistency
+    localStorage.setItem("noteData",JSON.stringify(notes))
+  },[notes]);
+
+
 
   function addNote(note) {
     setNotes((pre) =>{
